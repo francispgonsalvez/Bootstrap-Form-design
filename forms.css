@@ -1,0 +1,161 @@
+body{
+    background-color: #d8d8d8;
+    font-family: 'DM Sans', sans-serif;
+}
+.row{
+    gap: 1rem;
+}
+.upload{
+    position: relative;
+}
+#customFile{
+    opacity: 0;
+    height: 10rem;
+    position: absolute;
+}
+.text{
+    height: 10rem;
+    border: #B2BAD0 dashed;
+    background-color: #FAFCFE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 0.2mm;
+    border-radius: 15px;
+}
+.text i{
+    color: #4318FF;
+}
+.text h1{
+    font-size: 16px;
+    font-weight: 700;
+    color: #4318FF;
+}
+.text p{
+    font-size: 12px;
+    color: #8F9BBA;
+    font-weight: 500;
+}
+label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2B3674;
+}
+span{
+    color: #FF1818;
+}
+.container{
+    margin: 0;
+    padding: 2rem;
+    min-width: 100%;
+}
+.range{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.measure{
+    width: 100px;
+    border: #B6BBC7 solid;
+    border-radius: 15px;
+    border-width: 0.2mm;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.details{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.detail{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-check-input{
+    box-shadow: none !important;
+    color: #A1A9C2 !important;
+}
+.col .form-control{
+    box-shadow: none;
+    border-radius: 1rem;
+}
+.col .form-control:focus{
+    border-color: #4318FF;
+}
+.col .form-select{
+    box-shadow: none;
+    border-radius: 1rem;
+}
+.col .form-select:focus{
+    border-color: #4318FF;
+}
+.col{
+    background-color: #ffffff;
+    border-radius: 1rem;
+}
+h1{
+    font-size: 24px;
+    color: #2B3674;
+}
+h4{
+    font-size: 16px;
+}
+.form-date{
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: none;
+    padding: 5px;
+    border-radius: 1rem;
+    border-width: 0.1mm !important;
+    border: #B6BBC7 solid;
+}
+.form-control{
+    width: 100%;
+}
+.form-check{
+    margin: 1rem 0 0 0;
+}
+p{
+    font-size: 14px;
+    margin: 0;
+}
+.col-12{
+    display: flex;
+justify-content: end;
+background: #FFF;
+padding: 1rem;
+gap: 5px;
+border-radius: 1rem;
+}
+button{
+    font-size: 16px !important;
+}
+.button{
+    color: #fff;
+    background-color: #4318FF;
+    border-radius: 15px;
+}
+@media screen and (max-width: 580px) {
+    .row{
+        display: block;
+    }
+    .details{
+        padding: 5px;
+    }
+    .col-12{
+       flex-direction: column;
+    }
+    .measure{
+        width: 60px;
+        font-size: 12px;
+    }
+    .detail{
+        padding: 15px;
+    }
+}

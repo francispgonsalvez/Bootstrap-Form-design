@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../htmlpro.cpp"
+		},
+		{
+			"path": "../project"
+		},
+		{
+			"path": "../flexgridpro"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "flexgridpro"
+	}
+}

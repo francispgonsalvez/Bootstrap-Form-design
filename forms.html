@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ffe58bba86.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Comme:wght@100;200;400;500;600&family=IBM+Plex+Sans:wght@100;200;300;400;500;600&family=Inter:wght@600&family=Josefin+Sans:wght@700&family=Kanit:wght@200;300&family=Konkhmer+Sleokchher&family=Montserrat:wght@100;200;300;400;500&family=Mukta:wght@500&family=Noto+Sans:wght@300&family=Open+Sans&family=Outfit:wght@700&family=Poltawski+Nowy&family=Poppins:wght@700&family=Roboto&family=Roboto+Slab:wght@700&family=Rubik:wght@300&family=Source+Code+Pro:wght@600&family=Teko:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="forms.css">
+  </head>
+  <body> 
+    <div class="container xl">
+        <div class="row">
+          <form class="col col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div class="details">
+            <div class="row">
+                <h1>Basic Details</h1>
+            </div>
+            <div class="row-12">
+              <div class="upload">
+                <input type="file" class="form-control" id="customFile" />
+                <div class="text">
+                  <i class="fa-solid fa-cloud-arrow-up"></i>
+                  <h1>Upload Image</h1>
+                  <p>PNG, JPG files are allowed</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="validationCustom04" class="form-label">Salutation<span>*</span></label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option selected disabled value="">Select</option>
+                      <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+                  <div class="col">
+                      <label for="validationCustom01" class="form-label">First name<span>*</span></label>
+                      <input type="text" class="form-control" id="validationCustom01" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col">
+                      <label for="validationCustom02" class="form-label">Last name<span>*</span></label>
+                      <input type="text" class="form-control" id="validationCustom02" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col">
+                      <label for="exampleInputEmail1" class="form-label">Email address<span>*</span></label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mail@simmmple.com">
+                    </div>
+                    <div class="form-outline col">
+                        <label class="form-label" for="typePhone">Phone number input<span>*</span></label>
+                        <input type="tel" id="typePhone" class="form-control" placeholder="enter mobile number"/>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                 <div class="row"><label>Date of birth<span>*</span></label></div>   
+                <input class="form-date" type="date" name="date" id="date">
+                </div>
+                <div class="col">
+                  <div class="row"><label>Gender<span>*</span></label></div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">male</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">female</label>
+                  </div>
+                  </div>
+            </div>
+                <form class="row">
+                    <div class="col">
+                        <label for="inputAddress2" class="form-label">Address<span>*</span></label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="enter address">
+                      </div>
+                    <div class="row">  
+                      <div class="col">
+                        <label for="inputState" class="form-label">Country<span>*</span></label>
+                        <select id="inputState" class="form-select">
+                          <option selected>select country</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <label for="inputState" class="form-label">State<span>*</span></label>
+                        <select id="inputState" class="form-select">
+                          <option selected>select state</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div> 
+                    <div class="row">
+                      <div class="col">
+                        <label for="inputCity" class="form-label">City<span>*</span></label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="enter city">
+                      </div>
+                    </form>
+                      <div class="col">
+                        <label for="inputZip" class="form-label">Pin/Zip<span>*</span></label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="enter pin/zip">
+                      </div>
+                    </div>
+                  </div>
+                    </form>   
+<!--------------------------------------------------------------next page------------------------------------------------->
+        <form class="col">
+          <div class="detail">
+          <div class="row">
+              <h1 style="padding: 0;">Advanced Details</h1>
+          </div>
+          <div class="row">
+            <div class="alert alert-warning" role="alert">
+              <h4>Simple warning messages-alert</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed fermentum felis. Aliquam erat volutpat. Donec faucibus mauris vel nibh sodales feugiat. Donec suscipit felis vitae orci porttitor congue.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" style="padding: 0;">
+              <label for="customRange1" class="form-label">Height<span>*</span></label>
+              <div class="range"><input type="range" class="form-range" id="customRange1">
+              <div class="measure">160 cm</div>
+            </div>
+            </div>
+            <div class="col" style="padding: 0;">
+              <label for="customRange1" class="form-label">Weight<span>*</span></label>
+              <div class="range">
+                <input type="range" class="form-range" id="customRange1">
+                <div class="measure">68 kg</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" style="padding: 0;">
+              <label for="exampleColorInput" class="form-label">Choose Color<span>*</span></label>
+              <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#e423a3" title="Choose your color">
+            </div>
+            <div class="col" style="padding: 0;">
+           <div class="row"><label>Choose Tempelates<span>*</span></label></div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Temp 1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Temp 2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Temp 3</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <label for="disabledTextInput" class="form-label" style="padding: 0;">Qualifications</label>
+              <input type="text" id="disabledTextInput" class="form-control" placeholder="enter qualifications">
+          </div>
+          <div class="row">
+            <label for="floatingTextarea2" style="padding: 0;">About Your Self<span>*</span></label>
+              <textarea class="form-control" placeholder="enter here" id="floatingTextarea2" style="height: 10rem"></textarea>
+          </div>
+          <div class="row">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">I Accept Terms & Conditions</label>
+            </div>
+          </div>
+          </div>
+          </form> 
+<!-----------footer-------------------------------------------------------------------------------------->
+<form class="col-12">
+  <button type="button" class="btn btn-light btn-lg">cancel</button>
+  <button type="button" class="button btn btn-lg">save changes</button>
+</form>       
+</div>
+    </div>
+  </body>
+</html>
